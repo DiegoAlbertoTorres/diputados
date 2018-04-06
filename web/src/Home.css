@@ -1,0 +1,85 @@
+/* La telaraña del congreso
+ * Copyright (C) 2018 Diego Alberto Torres Quintanilla 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+#home {
+    height: 95%;
+    background-color: #2E4057;
+}
+#home #main {
+    display: inline;
+    width: 60%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+#main > #Legend {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#home > #sidebar {
+    width: 40%;
+    height: 100%;
+    display: inline;
+    float: right;
+    background-color: #eee;
+
+    /* Would be great to make this flex, to help
+     * with creation animations. However, having
+     * a dynamic height is expensive to render.
+     */
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*height: 100%;*/
+}
+#sidebar #Bio.expanded{
+    height: 20%;
+}
+#sidebar #Bio {
+    height: 0%;
+}
+.container.expanded h1 {
+    font-size: 6vh;
+}
+.container.expanded p {
+    font-size: 3.8vh;
+}
+.container h1 {
+    font-size: 5vh;
+}
+.container p {
+    font-size: 3.5vh;
+}
+#sidebar .container {
+    height: 80%;
+    overflow: auto;
+}
+#sidebar .container.expanded {
+    height: 100%;
+}
+.Sidebar {
+    border: 0;
+    height: 100%;
+    position: relative;
+}
+#Graph {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}

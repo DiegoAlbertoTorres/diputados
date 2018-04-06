@@ -1,0 +1,8 @@
+.dip_cache
+.ipynb_checkpoints/
+graph_backups/
+venv/
+web/public/*.json
+web/public/img/
+release.txt
+no_image.xcf

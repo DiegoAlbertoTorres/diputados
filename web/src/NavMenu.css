@@ -1,0 +1,72 @@
+/* La telaraña del congreso
+ * Copyright (C) 2018 Diego Alberto Torres Quintanilla 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+nav {
+  display: flex;
+  flex-direction: row;
+}
+.nav-div {
+  white-space: nowrap;
+  align-self: center;
+  margin: 0% 0% 0% 0%;
+  font-size: 3vh;
+  box-sizing: border-box;
+  margin-right: 0%;
+}
+.nav-wide {
+  display: none;
+}
+.nav-narrow {
+  margin-right: 2vw;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 1.25vh;
+}
+.narrow-links {
+  display: none;
+  text-align: right;
+}
+.narrow-nav-link {
+  display: block;
+}
+.nav-pill {
+  display: inline;
+  float: left;
+  margin-right: 1vw;
+}
+.narrow-nav-icon {
+  font-size: 2.5vh;
+  align-self: flex-end;
+}
+#nav .nav-link, #nav .nav-link:visited, #nav .nav-link:link, #nav .nav-link:active {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+.clear-div {
+  clear: both;
+}
+@media (min-aspect-ratio: 16/13) {
+  .nav-wide {
+    display: block;
+  }
+  .nav-narrow {
+    display: none;
+  }
+}

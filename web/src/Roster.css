@@ -1,0 +1,91 @@
+/* La telaraña del congreso
+ * Copyright (C) 2018 Diego Alberto Torres Quintanilla 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+.Roster > .ReactTable {
+    positon: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: 0;
+    outline: 1px solid rgba(255, 255, 255 ,0.1);
+}
+.selectedRow {
+  animation: selectedRow 3s infinite;
+  animation-timing-function: ease;
+  z-index: 1;
+}
+.Roster .rt-thead {
+    background-color: #E18AD4;
+    color: #fff;
+    box-shadow: 0px 10px 8px 2px #888888;
+}
+.Roster .rt-thead, .Roster .rt-thead -header {
+    border-left: 6px solid #E18AD4;
+    border-right: 13px solid #E18AD4;
+}
+.Roster input, select {
+    background-color: #D782BA !important;
+    color: #fff;
+}
+.Roster .rt-tbody .rt-tr {
+    height: 33px;
+    outline: 1px solid rgba(255, 255, 255 ,0.1);
+    color: #2E4057;
+    overflow: hidden;
+}
+.rt-tr.pri {
+    border-left: 6px solid red;
+}
+.rt-tr.prd {
+    border-left: 7px solid rgba(247, 192, 1, 0.5);
+}
+.rt-tr.pan {
+    border-left: 7px solid rgba(6, 51, 142, 0.5);
+}
+.rt-tr.pvem {
+    border-left: 7px solid rgba(80, 183, 71, 0.5);
+}
+.rt-tr.morena {
+    border-left: 7px solid rgba(239, 180, 124, 0.5);
+}
+.rt-tr.mvc {
+    border-left: 7px solid rgba(245, 130, 32, 0.5);
+}
+.rt-tr.panal {
+    border-left: 7px solid rgba(0, 164, 172, 0.5);
+}
+.rt-tr.pes {
+    border-left: 7px solid rgba(83, 1, 117, 0.5);
+}
+.rt-tr.ind {
+    border-left: 7px solid rgba(200, 200, 200, 0.5);
+}
+.rt-tr.unk {
+    border-left: 7px solid rgba(0, 0, 0, 0.5);
+}
+@keyframes selectedRow {
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(218, 65, 103, 0.2);
+    }
+    10% {
+        box-shadow: 0px 0px 2px 2px rgba(218, 65, 103, 1.0);
+    }
+    90% {
+        box-shadow: 0px 0px 2px 2px rgba(218, 65, 103, 1.0);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px rgba(218, 65, 103, 0.2);
+    }
+}

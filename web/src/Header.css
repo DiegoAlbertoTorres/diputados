@@ -1,0 +1,68 @@
+/* La telaraña del congreso
+ * Copyright (C) 2018 Diego Alberto Torres Quintanilla 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+@font-face {
+    font-family: "linux-libertine";
+    src: url("LinLibertine_R.woff") format('woff');
+}
+body #nav-header {
+  font-family: linux-libertine;
+  background-color: var(--primary-color)
+}
+:root {
+  --primary-color: #FFF;
+  --secondary-color: #E18AD4;
+}
+body #nav-header {
+  background-color: var(--secondary-color);
+}
+
+.nav {
+  font-family: linux-libertine;
+  margin: 0;
+  top: 0px;
+  left: 0px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px -2px #000;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+#nav-header, #nav-header:visited {
+  align-self: flex-start;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 4vh;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  margin-left: 5%;
+}
+#main-icon {
+  margin-right: 10px;
+  font-size: 3.5vh;
+}
+#main-icon path {
+  stroke-width: 4px;
+  stroke: white;
+  fill: white;
+}
+.clear-div {
+  clear: both;
+}

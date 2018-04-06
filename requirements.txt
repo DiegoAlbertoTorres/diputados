@@ -1,0 +1,11 @@
+networkx
+seaborn
+plotly
+cachetools
+matplotlib
+jupyter
+cssselect
+lxml
+unidecode
+numpy
+requests

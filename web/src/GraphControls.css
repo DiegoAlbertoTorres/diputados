@@ -1,0 +1,90 @@
+/* La telaraña del congreso
+ * Copyright (C) 2018 Diego Alberto Torres Quintanilla 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+.GraphControls{
+    height: 30px;
+    width: 100%;
+    margin: 10px 0px 0px 10px;
+}
+.zoom {
+    box-sizing: border-box;
+}
+.zoom-controls {
+    display: inline;
+}
+.play-controls {
+    display: inline;
+}
+.play-controls svg {
+    font-size: 13px;
+    vertical-align: middle;
+}
+.GraphControls button {
+    margin-right: 2px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 25px;
+    padding: 0;
+    vertical-align: bottom;
+    text-align: middle;
+    font-size: 20px;
+    border-radius: 40%;
+    font-weight: 700;
+}
+.play-controls > button {
+    margin-left: 10px;
+}
+.zoom-controls .slider {
+    width: 20%;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.slider .rc-slider-track {
+    background-color: #E18AD4;
+}
+.slider .rc-slider-rail {
+    background-color: #fff;
+}
+.slider .rc-slider-handle {
+    border: solid 2px #fff;
+    background-color: #E18AD4;
+}
+.play-pause-toggle {
+    height: 100%;
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+.play-pause-toggle .react-toggle {
+    margin-bottom: -4px;
+}
+.play-pause-toggle .react-toggle-track-check {
+    color: white;
+    padding-bottom: 6px;
+}
+.play-pause-toggle .react-toggle-track-x {
+    color: white;
+    padding-bottom: 6px;
+    padding-right: 3px;
+}
+.play-pause-toggle .react-toggle-track {
+    border: 2px solid #fff;
+}
+.play-pause-toggle .react-toggle--checked .react-toggle-track {
+    background-color: #E18AD4;
+}
+.play-pause-toggle .react-toggle-thumb {
+    margin-top: 2px;
+}

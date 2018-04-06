@@ -1,0 +1,33 @@
+/* La telaraña del congreso
+ * Copyright (C) 2018 Diego Alberto Torres Quintanilla 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+html, body, #root {
+    height: 100%;
+    background-color: #eee;
+}
+a:link, a:visited, a:active {
+    color: #E18AD4;
+}
+button {
+    border: 2px solid #fff;
+    background-color: #E18AD4;
+    color: #fff;
+}
+#nav {
+  min-height: 5%;
+}
+#master {
+  height: 100%;
+}

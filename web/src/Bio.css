@@ -1,0 +1,176 @@
+/* La telaraña del congreso
+ * Copyright (C) 2018 Diego Alberto Torres Quintanilla 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+.Bio {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    outline: 1px solid rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0px 2px 8px -2px #000;
+}
+.Bio .picture {
+    max-height: 100%;
+    float: left;
+    border-left: 10px solid black;
+    box-sizing: border-box;
+}
+.Bio .info-container {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.Bio .info {
+    background-color: #2E4057;
+    font-size: 3vh;
+    box-sizing: border-box;
+    padding: 5px;
+    color: #eee;
+    margin-bottom: auto;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.Bio .empty-info {
+    display: flex;
+    flex-direction: row;
+}
+.Bio .empty-info-content {
+    align-self: center;
+}
+.Bio .populated-info {
+    display: flex;
+    flex-direction: column;
+}
+.Bio .extra-info {
+    font-size: 2.5vh;
+    overflow: hidden;
+}
+.Bio .info div {
+    display: block;
+}
+.Bio .info > .name {
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+.substitute, .substitute-of {
+    font-size: 2vh;
+    vertical-align: top;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.stats {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.Bio .info .substitute-name {
+    color: #E18AD4;
+}
+.Bio .info .substitute-name:hover {
+    color: #E18AD4;
+    cursor: pointer;
+}
+.type svg {
+    font-size: 3.0vh;
+}
+.links {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.links svg{
+    margin-right: 8px;
+    margin-bottom: 5px;
+    font-size: 3.0vh;
+}
+.links a:link, .links a:visited, .links a:active {
+    vertical-align: bottom;
+    text-decoration: none;
+    color: #E18AD4;
+    margin-left: 0.5vh;
+}
+.stat-icon-shifted {
+    margin-left: 0.5vh;
+}
+.Bio > .info > .party {
+}
+.Bio .crop {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.Bio img.pri {
+    border-left-color: red;
+}
+.Bio img.prd {
+    border-left-color: rgba(247, 192, 1, 0.5);
+}
+.Bio img.pan {
+    border-left-color: rgba(6, 51, 142, 0.5);
+}
+.Bio img.pvem {
+    border-left-color: rgba(80, 183, 71, 0.5);
+}
+.Bio img.morena {
+    border-left-color: rgba(239, 180, 124, 0.5);
+}
+.Bio img.mvc {
+    border-left-color: rgba(245, 130, 32, 0.5);
+}
+.Bio img.panal {
+    border-left-color: rgba(0, 164, 172, 0.5);
+}
+.Bio img.pes {
+    border-left-color: rgba(83, 1, 117, 0.5);
+}
+.Bio img.ind {
+    border-left-color: rgba(200, 200, 200, 0.5);
+}
+.Bio img.unk {
+    border-left-color: rgba(0, 0, 0, 0.5);
+}
+.loader-container {
+    border-left: 10px solid black;
+    border-left-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 9vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #D782BA; /* Blue */
+    border-radius: 50%;
+    width: 4.0vh;
+    height: 4.0vh;
+    animation: spin 2s linear infinite;
+    align-self: center;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
